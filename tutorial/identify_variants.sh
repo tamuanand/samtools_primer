@@ -5,6 +5,7 @@ printf "\n>Converting SAM to BAM\n"
 samtools view -b -S -o alignments/sim_reads_aligned.bam alignments/sim_reads_aligned.sam
 
 # Sort and Index BAM
+# add new comment
 printf "\n>Sorting and indexing BAM\n"
 samtools sort alignments/sim_reads_aligned.bam alignments/sim_reads_aligned.sorted
 samtools index alignments/sim_reads_aligned.sorted.bam
